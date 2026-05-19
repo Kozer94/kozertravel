@@ -11,10 +11,13 @@ class NewsletterController extends Controller
     {
         $request->validate(['email' => 'required|email|max:255']);
 
-        Subscriber::firstOrCreate(
+        // dedup بسيط حسب email (أقوى من firstOrCreate فقط بـ email)
+        // مع حفظ ip لأول مرة
+        $subscriber = Subscriber::firstOrCreate(
             ['email' => $request->email],
             ['ip'    => $request->ip()]
         );
+
 
         return back()->with('newsletter_success', true);
     }
