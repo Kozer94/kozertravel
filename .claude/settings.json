@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\kozer\\\\Desktop\\\\KozerTravel\\\\resources\\\\views\\\\destinations\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\kozer\\\\Desktop\\\\KozerTravel\\\\resources\\\\views\\\\hotels\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\kozer\\\\Desktop\\\\KozerTravel\\\\resources\\\\views\\\\blog\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\kozer\\\\Desktop\\\\KozerTravel\\\\resources\\\\views\\\\legal\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\kozer\\\\Desktop\\\\KozerTravel\\\\resources\\\\views\\\\admin\\\\subscribers\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\kozer\\\\Desktop\\\\KozerTravel\\\\resources\\\\views\\\\admin\\\\posts\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\kozer\\\\Desktop\\\\KozerTravel\\\\resources\\\\views\\\\admin\\\\messages\")",
+      "Bash(Write-Host \"Directories created\")"
+    ]
+  }
+}
